@@ -731,6 +731,10 @@ var fangjs, fang, define;
             return require
         }
 
+        require.exec = function(id) {
+            return Module.get(require.resolve(id)).exec();
+        }
+        
         // Exec factory
         var factory = mod.factory
 

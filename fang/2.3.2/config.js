@@ -15,7 +15,7 @@
     // 设置fangjs根目录地址
     // 设置根目录地址
     if (!vars.base) {
-        var path = 'static/js/';
+      
         var hrefArr = href.split('/');
         var hrefArrLen = hrefArr.length;
         var publicUrl = '';
@@ -26,7 +26,7 @@
             }
             publicUrl = hrefArr.join('/');
         }
-        vars.base = publicUrl + (publicUrl.substr(publicUrl.length - 1) === '/' ? path : '/' + path);
+        vars.base = publicUrl + (publicUrl.substr(publicUrl.length - 1) === '/' ? '' : '/');
     }
 
 
